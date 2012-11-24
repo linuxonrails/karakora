@@ -1,0 +1,27 @@
+#flash
+  - if flash[:notice]
+    #flash_notice.alert.alert-success
+      %button{type: "button", class: :close, data: {dismiss: :alert}}
+        ×
+      %h4
+        %i.icon-info-sign
+        = t("Aviso")
+      = flash[:notice]
+
+  - if flash[:alert]
+    #flash_alert.alert.alert-block
+      %button{type: "button", class: :close, data: {dismiss: :alert}}
+        ×
+      %h4
+        %i.icon-warning-sign
+        = t("¡Advertencia!")
+      = flash[:alert]
+
+  - if flash[:error]
+    #flash_error.alert.alert-error
+      %button{type: "button", class: :close, data: {dismiss: :alert}}
+        ×
+      %h4
+        %i.icon-warning-sign
+        = t("¡Error!")
+      = flash[:error]

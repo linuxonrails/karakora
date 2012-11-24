@@ -1,4 +1,7 @@
 Karakora::Application.routes.draw do
-  root :to => 'Clearance::Sessions#new'
+  devise_for :users#, path_names: { sign_in: "login", sign_out: "logout"}
 
+  get "home/index"
+
+  root :to => "home#index"
 end

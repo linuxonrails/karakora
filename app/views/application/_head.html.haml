@@ -1,0 +1,36 @@
+%meta{:charset => "utf-8"}
+%meta{:content => "NOODP", :name => "ROBOTS"}
+%meta{name: "description", content: "Smart Bootstrap Theme"}
+%meta{name:"keywords", content: "Template, Theme, web, html5, css3, Bootstrap"}
+%meta{name:"author", content: "Łukasz Holeczek from creativeLabs"}
+
+%meta{name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1"}
+
+%meta{property:"og:title", content: ""}
+%meta{property:"og:description", content: ""}
+%meta{property:"og:type", content: ""}
+%meta{property:"og:url", content: ""}
+%meta{property:"og:image", content: ""}
+
+%title= page_title
+
+= stylesheet_link_tag "bootstrap", :media => 'all'
+= stylesheet_link_tag "bootstrap-responsive", :media => 'all'
+= stylesheet_link_tag "style", :media => 'all'
+= stylesheet_link_tag "parallax-slider", :media => 'all'
+= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Droid+Sans:400,700", :media => 'all'
+= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Droid+Serif", :media => 'all'
+= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Boogaloo", :media => 'all'
+= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Economica:700,400italic", :media => 'all'
+
+= stylesheet_link_tag :application, :media => 'all'
+
+= javascript_include_tag :application
+
+= yield :javascript
+
+- if Rails.env.test?
+  :javascript
+    $.ajaxSetup({ async: false });
+
+= csrf_meta_tags

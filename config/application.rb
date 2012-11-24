@@ -19,7 +19,7 @@ module Karakora
   class Application < Rails::Application
     config.active_record.default_timezone = :utc
     config.generators do |generate|
-      generate.test_framework :rspec
+      generate.test_framework :test_unit, :fixture => false # :rspec
       generate.helper false
       generate.stylesheets false
       generate.javascript_engine false

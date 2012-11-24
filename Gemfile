@@ -24,7 +24,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'clearance'
+# gem 'clearance'
 gem 'thin'
 gem 'high_voltage'
 gem 'paperclip'
@@ -45,9 +45,12 @@ gem 'htmlentities'
 # gem-hack to hide warnings in cucumber
 gem 'escape_utils'
 
-gem "activeadmin", git: "git://github.com/gregbell/active_admin.git"
+gem 'activeadmin', git: "git://github.com/gregbell/active_admin.git"
 
-gem "friendly_id", git: "https://github.com/norman/friendly_id.git"
+gem 'friendly_id', git: "https://github.com/norman/friendly_id.git"
+
+gem 'devise'
+gem 'omniauth-twitter'
 
 group :development do
   gem 'foreman'

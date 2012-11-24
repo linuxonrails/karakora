@@ -1,0 +1,23 @@
+en:
+  # Active Record models configuration
+  activerecord:
+    # Translate model names. Used in Model.human_name().
+    #models:
+    # For example,
+    #   user: "Dude"
+    # will translate User model name to "Dude"
+    models:
+      user: usuario
+
+    # Translate model attribute names. Used in Model.human_attribute_name(attribute).
+    #attributes:
+    # For example,
+    #   user:
+    #     login: "Handle"
+    # will translate User attribute "login" as "Handle"
+    attributes:
+      user:
+        email:                 "Email"
+        password:              "Password"
+        password_confirmation: "Password confirmation"
+        encrypted_password:    "Encrypted password"

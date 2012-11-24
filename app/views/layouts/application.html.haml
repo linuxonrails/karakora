@@ -1,0 +1,40 @@
+!!!
+%html{lang: I18n.locale}
+  %head
+    = render 'head'
+  %body
+    %header
+
+    = render 'flashes'
+
+    - if user_signed_in?
+      Logged in as
+      %strong
+        = current_user.email
+
+      = link_to t('Logout'), destroy_user_session_path, method: :delete
+    - else
+      = link_to t('Sign up'), new_user_registration_path
+      = link_to t('Login'), new_user_session_path
+
+    .r
+      %ul.unstyled
+        %li
+          = link_to t("English"), root_path(locale: 'en')
+        %li
+          = link_to t("Spanish"), root_path(locale: 'es')
+    .cr
+
+    .container
+      .row
+        .logo.span3
+          %i.ico-charts.circle
+          = succeed '.' do
+            %a.brand{href: '#'}
+              Kara
+              %span
+                kora
+
+    = yield
+
+    %footer

@@ -1,0 +1,23 @@
+development: &default
+  adapter: postgresql
+  database: karakora_development
+  encoding: utf8
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+  # rails me utiliza siempre el del usuario que ejecuta rails, ignora postgres :(
+  username: user
+  password: pass
+  socket: /var/run/postgresql
+
+test:
+  <<: *default
+  database: karakora_test
+  encoding: utf8
+  min_messages: warning
+  pool: 5
+  timeout: 5000
+  # rails me utiliza siempre el del usuario que ejecuta rails, ignora postgres :(
+  username: user
+  password: pass
+  socket: /var/run/postgresql

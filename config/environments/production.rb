@@ -9,7 +9,7 @@ Karakora::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_assets = true # false
 
   # Compress JavaScripts and CSS
   config.assets.compress = true
@@ -46,7 +46,7 @@ Karakora::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w(application.css application.js  search.js bootstrap.js carousel.js custom.js fancybox.js flexslider.js isotope.js jquery.baraja.js jquery.cslider.js jquery.gmap.min.js modernizr-2.6.2.min.js modernizr.custom.79639.js slider.js baraja.css bootstrap.css bootstrap-responsive.css custom.css fancybox.css hover.css icons-color.css icons.css parallax-slider2.css parallax-slider.css social-icons.css style.css)
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

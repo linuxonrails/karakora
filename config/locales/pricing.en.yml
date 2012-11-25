@@ -1,0 +1,21 @@
+en:
+  money_symbol: '$'
+  Price: Price
+  
+  Buy: Buy
+  per month:    per month
+  per 3 months: per 3 months
+  per year:     per year
+  
+  Standard:     Standard
+  Premium:      Premium
+  Professional: Professional
+  Ultimate:     Ultimate
+  Master:       Master
+  
+  Limit amount games:  Limit %{amount} games
+  No limit games: No limit games
+  Without invitations: Without invitations
+  Invite amount friends one month: Invite %{amount} friends one month
+  New unique cards for amount euros: New (unique!) cards for amount euros
+  Free new card customized for you: Free new card customized for you!

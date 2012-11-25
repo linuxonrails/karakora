@@ -1,0 +1,110 @@
+#footer-menu.hidden-tablet.hidden-phone
+  .container
+    .row
+      .span3
+        #footer-menu-logo
+          #logo-chart         
+          %a.brand{:href => "#"}
+            Kara
+            %span> kora
+            games
+      .span8
+        #footer-menu-links
+          %ul#footer-nav
+            %li
+              = link_to t("Start"), start_path
+            %li
+              = link_to t("About"), about_path
+            %li
+              %a{:href => "pricing.html"}= t("Pricing")
+            %li
+              %a{:href => "contact.html"}= t("Contact")
+      .span1
+        #footer-menu-back-to-top
+          %a{:href => "#"}
+
+#footer
+  .container
+    .row
+      .span3
+        %h3 About Us
+        %p
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      .span3
+        %h3 We are here!
+        #small-map-container
+          %a{:href => "contact.html"}
+        %iframe#small-map{:frameborder => "0", :height => "210", :marginheight => "0", :marginwidth => "0", :scrolling => "yes", :src => "https://maps.google.pl/maps?f=q&source=s_q&hl=pl&geocode=&q=Los+Angeles,+Kalifornia,+Stany+Zjednoczone&aq=0&oq=Los&sll=50.143066,18.85267&sspn=0.057207,0.168915&t=m&ie=UTF8&hq=&hnear=Los+Angeles,+Hrabstwo+Los+Angeles,+Kalifornia,+Stany+Zjednoczone&ll=34.052234,-118.243685&spn=0.036979,0.084457&z=14&iwloc=near&output=embed", :width => "210"}
+      .span6
+        %h3 Follow Us!
+        %ul.social-grid
+          %li
+            .social-item
+              .social-info-wrap
+                .social-info
+                  .social-info-front.social-twitter
+                    %a{:href => "http://twitter.com"}
+                  .social-info-back.social-twitter-hover
+                    %a{:href => "http://twitter.com"}
+          %li
+            .social-item
+              .social-info-wrap
+                .social-info
+                  .social-info-front.social-facebook
+                    %a{:href => "http://facebook.com"}
+                  .social-info-back.social-facebook-hover
+                    %a{:href => "http://facebook.com"}
+          %li
+            .social-item
+              .social-info-wrap
+                .social-info
+                  .social-info-front.social-dribbble
+                    %a{:href => "http://dribbble.com"}
+                  .social-info-back.social-dribbble-hover
+                    %a{:href => "http://dribbble.com"}
+          %li
+            .social-item
+              .social-info-wrap
+                .social-info
+                  .social-info-front.social-flickr
+                    %a{:href => "http://flickr.com"}
+                  .social-info-back.social-flickr-hover
+                    %a{:href => "http://flickr.com"}
+
+        %form#newsletter
+          %h3 Newsletter
+          %p Please leave us your email
+          %label{:for => "newsletter_input"} @:
+          %input#newsletter_input{:type => "text"}/
+          %input#newsletter_submit{:type => "submit", :value => "submit"}
+
+
+
+#copyright
+  .container
+    .center
+      %p
+        \© 2012,
+        = succeed "." do
+          %a{:href => "http://karakora.net"} 
+            karakoragames
+        = t("Created by link in Málaga Spain_html", link: link_to("kara#{content_tag('span', 'kora', class: :muted)}games".html_safe, "http://karakora.net"))
+
+
+= javascript_include_tag "bootstrap.js"
+= javascript_include_tag "isotope.js"
+= # javascript_include_tag "jquery.imagesloaded.js"
+= javascript_include_tag "flexslider.js"
+= javascript_include_tag "carousel.js"
+= javascript_include_tag "jquery.cslider.js"
+= javascript_include_tag "slider.js"
+= javascript_include_tag "fancybox.js"
+
+= javascript_include_tag "custom.js"# %script{defer: "defer", src: "custom.js"}
+
+= yield :javascript
+
+- if Rails.env.test?
+  :javascript
+    $.ajaxSetup({ async: false });
+

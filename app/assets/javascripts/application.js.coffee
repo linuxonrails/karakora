@@ -13,6 +13,6 @@
 #
 #= require jquery
 #= require jquery_ujs
-#= require modernizr-2.6.2.min
+#= # require modernizr-2.6.2.min
 #= require_self
 ###

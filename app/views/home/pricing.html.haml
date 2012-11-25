@@ -1,0 +1,141 @@
+#page-title
+  #page-title-inner
+    .container
+      %h2
+        - if I18n.locale == :es               
+          %i.ico-euro.ico-white>
+        - else 
+          %i.ico-usd.ico-white>          
+        = t("Price")
+
+#wrapper
+  .container
+    %h4= t("per month")
+    .four-tables
+      .pricing-table
+        .color-cccddd
+          %h3= t("Standard")
+          %h4
+            %span.price €0.99
+            %span.time= t("per month")
+          %ul
+            %li= t("Limit amount games", amount: 5)
+            %li= t("Without invitations")
+            %li= t("New unique cards for amount euros", amount: "15 €")
+            
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+      .pricing-table
+        .color-666777
+          %h3= t("Premium")
+          %h4
+            %span.price €1.99
+            %span.time= t("per month")
+          %ul
+            %li= t("Limit amount games", amount: 15)
+            %li= t("Invite amount friends one month", amount: 2)
+            %li= t("New unique cards for amount euros", amount: "15 €")
+            
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+      .pricing-table.best-option
+        .color-custom
+          %h3= t("Professional")
+          %h4
+            %span.price €5.99
+            %span.time= t("per month")
+          %ul
+            %li= t("No limit games")          
+            %li= t("Invite amount friends one month", amount: 3)
+            %li= t("New unique cards for amount euros", amount: "5 €")
+            
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+      .pricing-table
+        .color-666777
+          %h3= t("Ultimate")
+          %h4
+            %span.price €4.99
+            %span.time= t("per month")
+          %ul
+            %li= t("No limit games")                    
+            %li= t("Invite amount friends one month", amount: 5)
+            %li= t("New unique cards for amount euros", amount: "5 €")
+            
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+
+  .container
+    %h4= t("per 3 months")
+    .three-tables
+      .pricing-table
+        .color-cccddd
+          %h3= t("Standard")
+          %h4
+            %span.price €9.99
+            %span.time= t("per 3 months")
+          %ul
+            %li= t("No limit games")                    
+            %li= t("Invite amount friends one month", amount: 2)
+            %li= t("New unique cards for amount euros", amount: "5 €")
+            
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+      .pricing-table.best-option
+        .color-custom
+          %h3= t("Premium")
+          %h4
+            %span.price €19.99
+            %span.time= t("per 3 months")
+          %ul
+            %li= t("No limit games")                    
+            %li= t("Invite amount friends one month", amount: 2)
+            %li= t("New unique cards for amount euros", amount: "5 €")
+            
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+      .pricing-table
+        .color-666777
+          %h3= t("Professional")
+          %h4
+            %span.price €29.99
+            %span.time= t("per 3 months")
+          %ul
+            %li= t("No limit games")                    
+            %li= t("Invite amount friends one month", amount: 8)
+            %li= t("New unique cards for amount euros", amount: "5 €")
+            
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+
+  .container
+    %h4= t("per year")
+    .two-tables
+      .pricing-table
+        .color-cccddd
+          %h3= t("Premium")
+          %h4
+            %span.price €69.99
+            %span.time= t("per year")
+          %ul
+            %li= t("No limit games")                    
+            %li= t("Invite amount friends one month", amount: 8)
+            %li= t("New unique cards for amount euros", amount: "3 €")
+            %li= "..."
+            
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+      .pricing-table
+        .color-custom
+          %h3= t("Master")
+          %h4
+            %span.price €89.99
+            %span.time= t("per year")
+          %ul
+            %li= t("No limit games")                    
+            %li= t("Invite amount friends one month", amount: 25)
+            %li= t("New unique cards for amount euros", amount: "1 €")
+            %li= t("Free new card customized for you")
+          %a.buy.disabled{:href => "#"}
+            %span= t("Buy")
+

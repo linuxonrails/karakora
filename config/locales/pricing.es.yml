@@ -1,0 +1,21 @@
+es:
+  money_symbol: '€'
+  Price: Precios
+  
+  Buy: comprar
+  per month:    por mes  
+  per 3 months: por 3 meses
+  per year:     por año
+  
+  Standard:     Standard
+  Premium:      Avanzado
+  Professional: Profesional
+  Ultimate:     Extremo
+  Master:       Maestro
+  
+  Limit amount games:  Límite de %{amount} partidas
+  No limit games: Sin límite de partidas
+  Without invitations: Sin invitaciones
+  Invite amount friends one month: Invita a %{amount} amigos a jugar gratis un mes
+  New unique cards for amount euros: Nuevas cartas (únicas) te costarán solo %{amount} euros  
+  Free new card customized for you: Nueva carta de regalo personalizada del tipo que quieras 

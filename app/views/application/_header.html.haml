@@ -1,0 +1,71 @@
+%header
+  .container
+    .row
+      .logo.span3
+        %i.ico-circle-ok.circle
+        = link_to root_path, class: :brand do
+          = "Kara#{content_tag('span', 'kora')}games".html_safe
+            
+      .span9
+        .navbar.navbar-inverse
+          .navbar-inner
+            %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+              %span.icon-bar
+              %span.icon-bar
+              %span.icon-bar
+            .nav-collapse.collapse
+              %ul.nav
+                %li.active.dropdown
+                  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                    = t("Home")
+                    %b.caret
+                  %ul.dropdown-menu
+                    %li
+                      %a{:href => "index.html"}= t("Home standard")
+                    %li
+                      %a{:href => "index2.html"} Home alternative
+                    %li
+                      %a{:href => "index3.html"} Home alternative 2
+                    %li
+                      %a{:href => "index4.html"} Home alternative 3
+                %li
+                  = link_to t("News"), whatsnew_path
+                
+                - if false # %li.dropdown
+                                  
+                  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                    Features
+                    %b.caret
+                  %ul.dropdown-menu
+                    %li
+                      %a{:href => "social-icons.html"} Social Icons
+                    %li
+                      %a{:href => "icons.html"} Icons
+                    %li
+                      %a{:href => "sliders.html"} Sliders
+                    %li
+                      %a{:href => "typography.html"} Typography
+                    %li
+                      %a{:href => "shortcodes.html"} Shortcodes
+                    %li
+                      %a{:href => "list-styles.html"} List Styles
+                      
+                %li.dropdown
+                  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                    = t("Cards")
+                    %b.caret
+                  %ul.dropdown-menu
+                    %li
+                      %a{:href => "cards/mine"}= t("My cards")
+                    %li
+                      %a{:href => "cards/"}= t("All cards")
+                %li
+                  %a{:href => "/demo"}
+                    = t("Demo")
+                %li
+                  %a{:href => "pricing.html"}= t("Pricing")
+                %li
+                  %a{:href => "about.html"}= t("About")
+                %li
+                  %a{:href => "contact.html"}= t("Contact")
+

@@ -1,0 +1,148 @@
+#page-title
+  #page-title-inner
+    .container
+      %h2
+        %i.ico-lightbulb.ico-white>
+        = t("My cards")
+
+#wrapper
+  .container
+    #filters
+      %ul.option-set{"data-option-key" => "filter"}
+        %li
+          %a.selected{"data-option-value" => "*", :href => "#filter"} Todas mis cartas
+        %li
+          %a{"data-option-value" => ".nature", :href => "#filter"} Guerreros
+        %li
+          %a{"data-option-value" => ".people", :href => "#filter"} Nobles
+        %li
+          %a{"data-option-value" => ".scenery", :href => "#filter"} Lugares
+        %li
+          %a{"data-option-value" => ".world", :href => "#filter"} Situaciones
+          
+  / end: Container
+  / start: Container
+  .container
+    / start: Portfolio
+    #portfolio-wrapper.row
+      .span4.portfolio-item.nature.people
+        .picture
+          %a{:href => "project.html", :title => "Title"}
+            %img{:alt => "", :src => "/assets/photo1.jpg"}/
+            .image-overlay-link
+          .item-description.alt
+            %h5
+              %a{:href => "project.html"} Project no. 1
+            %p
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          .post-meta
+            %span
+              %i.mini-ico-calendar>
+              1 June 2011
+            %span
+              %i.mini-ico-user
+              %a{:href => "#"} lucas
+            %span
+              %i.mini-ico-comment
+              %a{:href => "#"} 89 comments
+      .span4.portfolio-item.scenery
+        .picture
+          %a{:href => "project.html", :title => "Title"}
+            %img{:alt => "", :src => "/assets/photo3.jpg"}/
+            .image-overlay-link
+          .item-description.alt
+            %h5
+              %a{:href => "project.html"} Project no. 3
+            %p
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          .post-meta
+            %span
+              %i.mini-ico-calendar>
+              1 June 2011
+            %span
+              %i.mini-ico-user
+              %a{:href => "#"} lucas
+            %span
+              %i.mini-ico-comment
+              %a{:href => "#"} 89 comments
+      .span4.portfolio-item.world.scenery
+        .picture
+          %a{:href => "project.html", :title => "Title"}
+            %img{:alt => "", :src => "/assets/photo5.jpg"}/
+            .image-overlay-link
+          .item-description.alt
+            %h5
+              %a{:href => "project.html"} Project no. 5
+            %p
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+          .post-meta
+            %span
+              %i.mini-ico-calendar>
+              1 June 2011
+            %span
+              %i.mini-ico-user
+              %a{:href => "#"} lucas
+            %span
+              %i.mini-ico-comment
+              %a{:href => "#"} 89 comments
+      .span4.portfolio-item.nature.scenery
+        .picture
+          %a{:href => "project.html", :title => "Title"}
+            %img{:alt => "", :src => "/assets/photo6.jpg"}/
+            .image-overlay-link
+          .item-description.alt
+            %h5
+              %a{:href => "project.html"} Project no. 6
+            %p
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          .post-meta
+            %span
+              %i.mini-ico-calendar>
+              1 June 2011
+            %span
+              %i.mini-ico-user
+              %a{:href => "#"} lucas
+            %span
+              %i.mini-ico-comment
+              %a{:href => "#"} 89 comments
+      .span4.portfolio-item.world
+        .picture
+          %a{:href => "project.html", :title => "Title"}
+            %img{:alt => "", :src => "/assets/photo4.jpg"}/
+            .image-overlay-link
+          .item-description.alt
+            %h5
+              %a{:href => "project.html"} Project no. 4
+            %p
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          .post-meta
+            %span
+              %i.mini-ico-calendar>
+              1 June 2011
+            %span
+              %i.mini-ico-user
+              %a{:href => "#"} lucas
+            %span
+              %i.mini-ico-comment
+              %a{:href => "#"} 89 comments
+      .span4.portfolio-item.world.people
+        .picture
+          %a{:href => "project.html"}
+            %img{:alt => "", :src => "/assets/photo8.jpg"}/
+            .image-overlay-link
+          .item-description.alt
+            %h5
+              %a{:href => "project.html"} Project no. 8
+            %p
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          .post-meta
+            %span
+              %i.mini-ico-calendar>
+              1 June 2011
+            %span
+              %i.mini-ico-user
+              %a{:href => "#"} lucas
+            %span
+              %i.mini-ico-comment
+              %a{:href => "#"} 89 comments
+

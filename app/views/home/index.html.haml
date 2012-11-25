@@ -1,2 +1,193 @@
-%h1
-  Home#index
+.slider-wrapper
+  #da-slider.da-slider
+    .da-slide
+      %h2= t("Trading card game")
+      %p
+        = succeed '...' do 
+          = t("Lots of unique cards that you can get by defeating other players, spending points, etc")
+          
+      %a.da-link{:href => "#"}= t("Read more")
+      .da-img
+        %img{:alt => "image01", :src => "img/parallax-slider/twitter.png"}/
+    .da-slide
+      %h2 Responsive Design
+      %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      %a.da-link{:href => "#"} Read more
+      .da-img
+        %img{:alt => "image02", :src => "img/parallax-slider/responsive.png"}/
+    .da-slide
+      %h2 HTML5
+      %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      %a.da-link{:href => "#"} Read more
+      .da-img
+        %img{:alt => "image03", :src => "img/parallax-slider/html5.png"}/
+    .da-slide
+      %h2 CSS3
+      %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      %a.da-link{:href => "#"} Read more
+      .da-img
+        %img{:alt => "image04", :src => "img/parallax-slider/css3.png"}/
+    %nav.da-arrows
+      %span.da-arrows-prev
+      %span.da-arrows-next
+
+#wrapper
+  / start: Container
+  .container
+    %hr
+      / start: Hero Unit - Main hero unit for a primary marketing message or call to action
+      .hero-unit
+        %h3
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.!
+        %p
+          %a.btn.btn-primary.btn-large Learn more »
+      / end: Hero Unit
+      %hr
+        / start: Row
+        .row
+          / start: Icon Boxes
+          .icons-box-vert-container
+            / start: Icon Box Start
+            .span4
+              .icons-box-vert
+                %i.ico-magic.ico-white.circle-color-full
+                .icons-box-vert-info
+                  %h3= t("Easy to play")
+                  %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                .clear
+            / end: Icon Box
+            / start: Icon Box Start
+            .span4
+              .icons-box-vert
+                %i.ico-cup.ico-white.circle-color-full
+                .icons-box-vert-info
+                  %h3= t("Win the tournaments")
+                  %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                .clear
+            / end: Icon Box
+            / start: Icon Box Start
+            .span4
+              .icons-box-vert
+                %i.ico-podium.ico-white.circle-color-full
+                .icons-box-vert-info
+                  %h3= t("Be the best player")
+                  %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                .clear
+            / end: Icon Box
+          / end: Icon Boxes
+          .clear
+        / end: Row
+        %hr
+          / start: Row
+          .row
+            .span9
+              .title
+                %h3 Latest Works
+              / start: Row
+              .row
+                .span3
+                  .picture
+                    %a{:href => "img/car.jpg", :rel => "image", :title => "mobile app"}
+                      %img{:src => "img/car.jpg"}
+                        .image-overlay-zoom
+                  .item-description
+                    %h4
+                      %a{:href => "#"} Lorem ipsum
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .span3
+                  .picture
+                    %a{:href => "project.html"}
+                      %img{:src => "img/web_app1.jpg"}
+                        .image-overlay-link
+                  .item-description
+                    %h4
+                      %a{:href => "#"} Lorem ipsum
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                .span3
+                  .picture
+                    %a{:href => "img/mobile_app1.jpg", :rel => "image", :title => "mobile app"}
+                      %img{:src => "img/mobile_app1.jpg"}
+                        .image-overlay-zoom
+                  .item-description
+                    %h4
+                      %a{:href => "#"} Lorem ipsum
+                    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              / end: Row
+            .span3
+              .testimonial-container
+                .title
+                  %h3 Lorem ipsum dolor
+                .testimonials-carousel{"data-autorotate" => "3000"}
+                  %ul.carousel
+                    %li.testimonial
+                      .testimonials Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                      .testimonials-bg
+                      .testimonials-author
+                        Lorem ipsum,
+                        %span dolor
+                    %li.testimonial
+                      .testimonials Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                      .testimonials-bg
+                      .testimonials-author
+                        Lorem ipsum,
+                        %span elit
+                    %li.testimonial
+                      .testimonials Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                      .testimonials-bg
+                      .testimonials-author
+                        Lorem ipsum,
+                        %span sit
+                    %li.testimonial
+                      .testimonials Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                      .testimonials-bg
+                      .testimonials-author
+                        Lorem ipsum,
+                        %span amet
+              / end: Testimonials
+          / end: Row
+          %hr
+            / start Clients List
+            .clients-carousel
+              %ul.slides.clients
+                %li
+                  %img{:alt => "", :src => "img/logos/1.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/2.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/3.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/4.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/5.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/6.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/7.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/8.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/9.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/10.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/1.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/2.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/3.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/4.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/5.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/6.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/7.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/8.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/9.png"}/
+                %li
+                  %img{:alt => "", :src => "img/logos/10.png"}/
+            / end Clients List
+            %hr

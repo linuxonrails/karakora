@@ -14,11 +14,11 @@
             %li
               = link_to t("Start"), start_path
             %li
+              = link_to t("Pricing"), pricing_path
+            %li
               = link_to t("About"), about_path
             %li
-              %a{:href => "pricing.html"}= t("Pricing")
-            %li
-              %a{:href => "contact.html"}= t("Contact")
+              = link_to t("Contact"), contact_path
       .span1
         #footer-menu-back-to-top
           %a{:href => "#"}
@@ -91,25 +91,4 @@
             karakoragames
         = t("Created by link in Málaga Spain_html", link: link_to("kara#{content_tag('span', 'kora', class: :muted)}games".html_safe, "http://karakora.net"))
 
-
-= # javascript_include_tag "bootstrap.js"
-= # javascript_include_tag "isotope.js"
-= # javascript_include_tag "jquery.imagesloaded.js"
-= # javascript_include_tag "flexslider.js"
-= # javascript_include_tag "carousel.js"
-= # javascript_include_tag "jquery.cslider.js"
-= # javascript_include_tag "slider.js"
-= # javascript_include_tag "fancybox.js"
-
-= # javascript_include_tag "custom.js"# %script{defer: "defer", src: "custom.js"}
-
-= javascript_include_tag :application
-
-- # = javascript_include_tag "jquery-1.8.2.js"
-
-= yield :javascript
-
-- if Rails.env.test?
-  :javascript
-    $.ajaxSetup({ async: false });
 

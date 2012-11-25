@@ -21,13 +21,13 @@
                     %b.caret
                   %ul.dropdown-menu
                     %li
-                      %a{:href => "index.html"}= t("Home standard")
+                      %a{:href => "/"} Home standard
                     %li
-                      %a{:href => "index2.html"} Home alternative
+                      %a{:href => "/"} Option 1
                     %li
-                      %a{:href => "index3.html"} Home alternative 2
+                      %a{:href => "/"} Option 2
                     %li
-                      %a{:href => "index4.html"} Home alternative 3
+                      %a{:href => "/"} Option 3
                 %li
                   = link_to t("News"), whatsnew_path
                 
@@ -56,16 +56,16 @@
                     %b.caret
                   %ul.dropdown-menu
                     %li
-                      %a{:href => "cards/mine"}= t("My cards")
+                      = link_to t("My cards"), cards_mine_path
                     %li
-                      %a{:href => "cards/"}= t("All cards")
+                      = link_to t("All cards"), cards_path
                 %li
                   %a{:href => "/demo"}
                     = t("Demo")
                 %li
-                  %a{:href => "pricing.html"}= t("Pricing")
+                  = link_to t("Pricing"), pricing_path
                 %li
-                  %a{:href => "about.html"}= t("About")
+                  = link_to t("About"), about_path
                 %li
-                  %a{:href => "contact.html"}= t("Contact")
+                  = link_to t("Contact"), contact_path
 

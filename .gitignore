@@ -35,8 +35,6 @@ config/database.yml
 public/system
 .sass-cache
 *~
-*.css
-**/.css
 rerun.txt
 activeadmin/
 public/assets/

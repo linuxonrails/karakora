@@ -46,7 +46,7 @@ Karakora::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  config.assets.precompile += %w(application.css application.js fancybox.css search.js bootstrap.js carousel.js custom.js fancybox.js flexslider.js isotope.js jquery.baraja.js jquery.cslider.js jquery.gmap.min.js modernizr-2.6.2.min.js modernizr.custom.79639.js slider.js)
+  config.assets.precompile += %w(application.css application.js fancybox.css style.css parallax-slider.css custom.css baraja.css search.js bootstrap.js carousel.js custom.js fancybox.js flexslider.js isotope.js jquery.baraja.js jquery.cslider.js jquery.gmap.min.js modernizr-2.6.2.min.js modernizr.custom.79639.js slider.js)
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false

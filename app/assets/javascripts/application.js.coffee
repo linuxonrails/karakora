@@ -17,5 +17,18 @@
 
 #= require jquery.baraja
 
-#= require_self
+#= require bootstrap
+#= require carousel
+#= require fancybox
+#= require flexslider
+#= require isotope
+
+#= require jquery.cslider
+#= require jquery.gmap.min
+
+#= require slider
+
+#= require custom
+
+#= # require_self
 ###

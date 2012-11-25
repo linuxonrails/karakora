@@ -92,16 +92,20 @@
         = t("Created by link in Málaga Spain_html", link: link_to("kara#{content_tag('span', 'kora', class: :muted)}games".html_safe, "http://karakora.net"))
 
 
-= javascript_include_tag "bootstrap.js"
-= javascript_include_tag "isotope.js"
+= # javascript_include_tag "bootstrap.js"
+= # javascript_include_tag "isotope.js"
 = # javascript_include_tag "jquery.imagesloaded.js"
-= javascript_include_tag "flexslider.js"
-= javascript_include_tag "carousel.js"
-= javascript_include_tag "jquery.cslider.js"
-= javascript_include_tag "slider.js"
-= javascript_include_tag "fancybox.js"
+= # javascript_include_tag "flexslider.js"
+= # javascript_include_tag "carousel.js"
+= # javascript_include_tag "jquery.cslider.js"
+= # javascript_include_tag "slider.js"
+= # javascript_include_tag "fancybox.js"
 
-= javascript_include_tag "custom.js"# %script{defer: "defer", src: "custom.js"}
+= # javascript_include_tag "custom.js"# %script{defer: "defer", src: "custom.js"}
+
+= javascript_include_tag :application
+
+- # = javascript_include_tag "jquery-1.8.2.js"
 
 = yield :javascript
 
